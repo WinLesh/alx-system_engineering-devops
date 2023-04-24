@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# To connect to my server 100.26.56.239 using private key ~/.ssh/school
+#Connects to server 100.26.56.239 using private key ~/.ssh/school
 
 ssh -1 ~/.ssh/school ubuntu@100.26.56.239
