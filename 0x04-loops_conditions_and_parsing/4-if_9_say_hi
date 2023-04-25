@@ -9,7 +9,7 @@ do
   if [ $a -eq 9 ]
   then
     echo "Hi"
-  if
+  fi
   echo "Best School"
   (( a++ ))
 done
