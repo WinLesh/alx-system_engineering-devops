@@ -1,6 +1,7 @@
 /*
  * File: 102-zombie.c
- * Auth: Brennan D Baraban
+ * Author:Lesego Winnie Seshabo
+ * code inspired by Jorgezafra
  */
 
 #include <stdio.h>
@@ -24,29 +25,24 @@ int infinite_while(void)
 }
 
 /**
- * main - Creates five zombie processes.
+ * main -C program that creates 5 zombie processes.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	pid_t pid;
-	char count = 0;
+	int i = 0;
+	pid_t child_pid;
 
-	while (count < 5)
+	for (; a < 5; a++)
 	{
-		pid = fork();
-		if (pid > 0)
+		child_pid = fork();
+		if (child_pid == 0)
 		{
-			printf("Zombie process created, PID: %d\n", pid);
-			sleep(1);
-			count++;
+			dprintf(1, "Zombie process created, PID: %d\n", getpid());
+			return (0);
 		}
-		else
-			exit(0);
 	}
-
 	infinite_while();
-
-	return (EXIT_SUCCESS);
+	return (0);
 }
