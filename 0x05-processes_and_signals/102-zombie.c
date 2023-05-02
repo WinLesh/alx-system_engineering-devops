@@ -25,24 +25,29 @@ int infinite_while(void)
 }
 
 /**
- * main -C program that creates 5 zombie processes.
+ * main - Creates five zombie processes.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int i = 0;
-	pid_t child_pid;
+	pid_t pid;
+	char count = 0;
 
-	for (; a < 5; a++)
+	while (count < 5)
 	{
-		child_pid = fork();
-		if (child_pid == 0)
+		pid = fork();
+		if (pid > 0)
 		{
-			dprintf(1, "Zombie process created, PID: %d\n", getpid());
-			return (0);
+			printf("Zombie process created, PID: %d\n", pid);
+			sleep(1);
+			count++;
 		}
+		else
+			exit(0);
 	}
+
 	infinite_while();
-	return (0);
+
+	return (EXIT_SUCCESS);
 }
