@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# install the Nginx on we-01server
+sudo apt-get -y update
+sudo apt-get -y install nginx
+# enable pass of traffic in the port 80
+sudo ufw allow 'Nginx HTTP'
+
+echo "Hello World!" |sudo tee /var/www/html/index.nginx-debian.html
+# start Nginx service
+sudo service nginx start
