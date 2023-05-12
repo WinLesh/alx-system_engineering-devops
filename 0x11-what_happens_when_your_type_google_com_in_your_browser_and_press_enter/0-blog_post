@@ -1,0 +1,53 @@
+ALX Journey continues and yes its still difficult. The following article with the help of Google Schoolar articles and ChatGPT explain what happens when we type google and press enter. First lets define the words as the assignment request.
+
+DNS request: A DNS request refers to the process of a client, such as a web browser, sending a query to a DNS resolver to obtain the IP address associated with a domain name. In the context of the article, when you type “google.com” in your browser and press Enter, the browser initiates a DNS request to resolve the domain name “google.com” into the corresponding IP address.
+
+TCP/IP: TCP/IP, which stands for Transmission Control Protocol/Internet Protocol, is a set of protocols used for communication over the internet. TCP provides reliable, connection-oriented data transmission, ensuring that data packets are delivered in the correct order and without errors. IP, on the other hand, handles the addressing and routing of data packets across the internet. In the context of the article, TCP/IP is utilized for establishing a connection between the client’s browser and Google’s servers, enabling the transmission of HTTP requests and responses.
+
+Firewall: A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between an internal network (such as your computer) and external networks (such as the internet). Firewalls analyze network packets and apply filtering rules to allow or block specific types of traffic. In the context of the article, firewalls may exist at various points in the network infrastructure, including on the client’s device, within the internet service provider’s network, or on the servers hosting Google’s website.
+
+HTTPS/SSL: HTTPS (Hypertext Transfer Protocol Secure) is a secure version of HTTP, the protocol used for transmitting data over the internet. HTTPS employs encryption to protect the confidentiality and integrity of data exchanged between a client and a server. SSL (Secure Sockets Layer) and its successor, TLS (Transport Layer Security), are cryptographic protocols that establish a secure connection between a client and a server, enabling HTTPS communication. In the context of the article, when you access the Google homepage, your browser likely establishes an HTTPS connection with Google’s servers, ensuring secure communication.
+
+Load-balancer: A load balancer is a network device or software component that evenly distributes incoming network traffic across multiple servers to optimize performance, reliability, and scalability. Load balancers monitor the availability and performance of servers and direct incoming requests to the server with the least load or the best response time. In the context of the article, load balancers may be used by Google to distribute the incoming requests from users across multiple web servers to ensure efficient handling of the traffic.
+
+Web server: A web server is a software application or a physical computer that hosts websites and delivers web content to clients, such as web browsers. It handles HTTP requests from clients and sends back the requested resources, such as HTML pages, images, or files. In the context of the article, Google’s servers include web servers that receive the HTTP requests for the Google homepage and respond with the necessary resources to render the page.
+
+Application server: An application server is a server that hosts and executes applications, typically providing additional functionality beyond what a web server offers. It handles business logic, data processing, and interacts with databases and other resources required by the application. In the context of the article, Google’s servers may include application servers that process the requests, execute complex algorithms, and generate dynamic content or search results based on user input.
+
+Database: A database is a structured collection of data organized and managed by a database management system (DBMS). It provides a means to store, retrieve, update, and manage data efficiently. In the context of the article, a database may be used by Google to store and retrieve information related to search queries, indexed web pages, user preferences, and various other data required for the functioning of the search engine.
+
+Now lets connects the dots.
+
+Introduction: In today’s digital age, we often take the remarkable capabilities of our web browsers for granted. With a simple act of typing “google.com” into the address bar and pressing Enter, we are instantly transported to the familiar search engine’s homepage. However, have you ever wondered what actually happens behind the scenes?
+
+Domain Name System (DNS) Resolution: The journey begins as soon as you enter “google.com” in your browser. The browser first needs to resolve the domain name into an IP address using the Domain Name System (DNS). The browser sends a DNS query to a DNS resolver, which then searches for the corresponding IP address associated with the domain name.
+
+Contacting the DNS Root Server: If the DNS resolver does not have the IP address cached, it will contact a DNS root server. These root servers form the backbone of the DNS hierarchy and hold information about top-level domains (TLDs) such as “.com.”
+
+TLD Server Lookup: The DNS root server directs the resolver to the appropriate TLD server responsible for handling “.com” domains. The resolver contacts this TLD server to obtain further information about the domain “google.com.”
+
+Authoritative Name Server: The TLD server then refers the resolver to the authoritative name server responsible for managing the “google.com” domain. The resolver contacts the authoritative name server to retrieve the IP address associated with “google.com.”
+
+Establishing a TCP Connection: Once the resolver obtains the IP address, it sends a request to the IP address of Google’s servers. This request is usually transmitted over TCP/IP (Transmission Control Protocol/Internet Protocol), which ensures reliable data transmission.
+
+Processing the HTTP Request: Upon receiving the request, Google’s servers process it using the Hypertext Transfer Protocol (HTTP). The HTTP request contains various details, including the requested resource (in this case, the Google homepage) and additional metadata.
+
+Server-Side Processing: Google’s servers process the request, which involves executing complex algorithms and database queries to generate the appropriate response. The response typically consists of HTML, CSS, JavaScript, and other assets required to render the Google homepage.
+
+Data Transmission and Rendering: Once the server generates the response, it sends it back to your browser over the established TCP connection. The browser then begins to render the received data, interpreting HTML, executing JavaScript, and applying CSS styles to display the Google homepage accurately.
+
+Additional Requests and Rendering: As the browser parses the HTML, it may encounter additional requests for external resources such as images, scripts, or stylesheets. These requests are sent to the server hosting the respective resources, and the browser renders them accordingly.
+
+Displaying the Google Homepage: Finally, after processing all the necessary data and completing the rendering of the webpage, your browser displays the fully rendered Google homepage. From this point forward, you can interact with the search engine, enter your query, and navigate through the search results seamlessly.
+
+Conclusion: The journey from typing “google.com” to reaching the Google homepage involves a series of intricate processes working together seamlessly. The DNS resolution, server-side processing, data transmission, and rendering all happen within seconds, allowing us to access information on the internet effortlessly. Understanding these underlying mechanisms enhances our appreciation for the incredible technologies that power our browsing experiences. So, the next time you hit Enter after typing a URL, remember the complex journey that unfolds behind the scenes.
+
+REFERENCES:
+
+J.H.C. van Heugten Master of System and Network Engineering University of Amsterdam, The Netherlands July 8, 2018
+2. Aaron Archer, Kevin Aydin, Mohammad Hossein Bateni, Vahab Mirrokni, Aaron Schild, Ray Yang and Richard ZhuangJournal: Proceedings of the VLDB Endowment, 2019, Volume 12, Number 6,Page 709
+
+3. Conference Paper: Performance evaluation for signing JSON tokens.Welington da Silva Martins, Julio Cezar Estrella, Sarita Mazzini Bruschi, Leonildo Jose de Melo de Azevedo and Gabriel Tomiatti AndreaziConference: 2020 IEEE Cloud Summit, Year: 2020, Page 72
+
+
+Task
