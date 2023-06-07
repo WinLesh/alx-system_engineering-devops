@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Function to count words in all hot posts of a given Reddit subreddit."""
+"""Recursive function that queries the Reddit API and returns
+a list containing the titles of all hot articles for a given subreddit"""
 import requests
 
 
